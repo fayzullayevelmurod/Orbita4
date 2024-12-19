@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+span {
+  display: inline-block;
+}
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+input {
+  outline: none;
+}
+body {
+  background: #0f0f0f;
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 500;
+  color: #ebebeb;
+  font-size: 12px;
+  line-height: 16.2px;
+}
+.wrapper {
+  overflow: hidden;
+}
+.container {
+  max-width: 768px;
+  width: calc(100% - 32px);
+  margin: 0 auto;
+}
+
+.status-text {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16.2px;
+  &.success {
+    background: #00c9224d;
+    color: #00c922;
+    padding: 2px 7px;
+    border-radius: 5px;
+  }
+}
+
+// header
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+  button {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .company-name {
+    font-family: 'Satoshi';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
+  }
+  &-flex__box {
+    display: flex;
+    align-items: center;
+  }
+}
+// header
+
+// intro
+.intro {
+  &-header {
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #2b2b2b;
+
+    &__title {
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 13.5px;
+      color: #8a8a8a;
+    }
+  }
+  .edit-btn {
+    border: 1px solid #2b2b2b;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #8a8a8a;
+  }
+  &-info {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-left: 8px;
+    &-contents {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    &__boxes {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    &__box {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .long-text {
+      width: 55px;
+    }
+    &__text {
+      color: #8a8a8a;
+    }
+    .line {
+      width: 1px;
+      height: 8px;
+      border-radius: 2px;
+      display: block;
+      background: #8a8a8a;
+    }
+    &__title {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16.2px;
+    }
+  }
+  &-bottom__content {
+    margin-top: 20px;
+    .intro-info__text {
+      min-width: 91px;
+    }
+    .intro-info__boxes {
+      gap: 8px;
+      width: 100%;
+    }
+    .intro-info__box {
+      justify-content: space-between;
+    }
+    .intro-info__title {
+      font-weight: 400;
+    }
+  }
+  &-body {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 8px 0 8px;
+
+    .line {
+      width: 1px;
+      height: 40px;
+      border-radius: 2px;
+      background: #2b2b2b;
+    }
+  }
+}
+// intro
+
+// chart sec
+.chart-sec {
+  margin-top: 16px;
+  .chart-bg {
+    height: 192px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: url(../images/icons/frm.svg) no-repeat;
+    background-size: cover;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .chart-btns {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 8px;
+
+    .stop-btn,
+    .restart-btn {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 20.25px;
+      color: #0f0f0f;
+      border-radius: 4px;
+      background: #00c922;
+      width: 100%;
+      padding: 8px 10px;
+    }
+    .restart-btn {
+      background: #7ecbf4;
+    }
+    .share-btn {
+      min-width: 40px;
+      max-width: 40px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #8a8a8a;
+      border-radius: 4px;
+    }
+  }
+  .trading-process {
+    &__header {
+      border-bottom: 1px solid #2b2b2b;
+      padding: 8px 8px 4px 8px;
+      &-title {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 13.5px;
+        color: #8a8a8a;
+      }
+    }
+  }
+}
+// chart sec
