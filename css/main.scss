@@ -820,14 +820,20 @@ main {
   left: 0;
   width: 100%;
   z-index: 9999;
-  transform: translateY(110%);
-  transition: all 0.2s linear;
+  // transform: translateY(110%);
+  // transition: all 0.2s linear;
+  // opacity: 0;
+  transform: translateY(100%); /* Yashirin holat */
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out; /* Harakatni sekinlashtirish */
+  // transition: all 0.2s ease-in-out;
+  visibility: hidden; /* Dastlab yashirin */
   opacity: 0;
   border-radius: 10px 10px 0 0;
   // display: none;
   &.show {
-    opacity: 1;
     transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
     // display: block;
   }
 

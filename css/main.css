@@ -799,14 +799,16 @@ main .header-box.active-header span {
   left: 0;
   width: 100%;
   z-index: 9999;
-  transform: translateY(110%);
-  transition: all 0.2s linear;
+  transform: translateY(100%); /* Yashirin holat */
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out; /* Harakatni sekinlashtirish */
+  visibility: hidden; /* Dastlab yashirin */
   opacity: 0;
   border-radius: 10px 10px 0 0;
 }
 .modal.show {
-  opacity: 1;
   transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
 }
 .modal-close {
   width: 70px;
