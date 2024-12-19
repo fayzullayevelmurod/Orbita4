@@ -106,6 +106,9 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 4px;
+  max-width: 768px;
+  width: calc(100% - 32px);
+  margin: 0 auto;
 }
 .header button {
   width: 48px;
@@ -228,6 +231,7 @@ body {
   overflow: hidden;
   background: url(../images/icons/frm.svg) no-repeat;
   background-size: cover;
+  border-bottom: 1px solid #2b2b2b;
 }
 .chart-sec .chart-bg .chart-img {
   width: 100%;
