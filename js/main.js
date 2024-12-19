@@ -36,4 +36,19 @@ window.addEventListener("DOMContentLoaded", () => {
     // });
   }
 
+  // modal
+  const openModal = document.querySelector('.open-modal');
+  const modal = document.querySelector(".modal");
+
+  if (modal) {
+    openModal.addEventListener("click", () => {
+      modal.classList.add("show");
+    });
+
+    const closeModal = modal.querySelectorAll('.close-modal');
+    closeModal.forEach(btn => btn.addEventListener('click', () => {
+      modal.classList.remove('show');
+    }));
+  }
 })
+

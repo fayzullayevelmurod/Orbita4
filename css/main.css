@@ -84,6 +84,17 @@ body {
   display: none;
 }
 
+.green-btn {
+  background: #00c922;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20.25px;
+  color: #0f0f0f;
+  padding: 12px;
+  width: 100%;
+  border-radius: 4px;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -338,4 +349,111 @@ main {
   height: 12px;
   background: #2b2b2b;
   border-radius: 2px;
+}
+
+.modal {
+  box-shadow: 0px -2px 4px 0px rgba(255, 250, 250, 0.3490196078);
+  background: #202020;
+  padding: 8px 16px 32px 16px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  transform: translateY(110%);
+  transition: all 0.2s linear;
+}
+.modal.show {
+  transform: translateY(0);
+}
+.modal-close {
+  width: 70px;
+  height: 4px;
+  background: #b0b0b0;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto 24px auto;
+}
+.modal .form-box .label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16.2px;
+  color: #8a8a8a;
+  display: block;
+  margin-bottom: 8px;
+}
+.modal .form-box .form-control {
+  border: 1px solid #8a8a8a;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16.2px;
+  background: transparent;
+  padding: 10px 12px;
+  height: 36px;
+  width: 200px;
+  color: #ebebeb;
+}
+.modal .form-box .form-control::-moz-placeholder {
+  color: #8a8a8a;
+}
+.modal .form-box .form-control::placeholder {
+  color: #8a8a8a;
+}
+.modal .form-box .box {
+  padding: 8px 16px 16px 16px;
+  border-top: 1px solid #2b2b2b;
+}
+.modal .form-box .box:first-child {
+  border-top: none;
+}
+.modal .form-box .box-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.modal .form-box .box-header .label {
+  margin-bottom: 0;
+}
+.modal .form-box .box .sub-title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16.2px;
+  color: #ebebeb;
+}
+.modal .form-box .box .line {
+  width: 1px;
+  height: 8px;
+  border-radius: 2px;
+  background: #8a8a8a;
+}
+.modal .form-box .select-boxes {
+  display: flex;
+  gap: 16px;
+  margin-right: -16px;
+  overflow-x: auto;
+}
+.modal .form-box .select-boxes::-webkit-scrollbar {
+  display: none;
+}
+.modal .form-box .select-box {
+  padding: 8px;
+  font-weight: 500;
+  color: #ebebeb;
+  border-radius: 6px;
+  border: 1px solid #8a8a8a;
+  white-space: nowrap;
+}
+.modal .form-box .select-box.active {
+  background: #e5e5e5;
+  color: #0f0f0f;
+}
+.modal .form-box .select-box.disabled {
+  color: rgba(235, 235, 235, 0.3019607843);
+}
+.modal .flex-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }/*# sourceMappingURL=main.css.map */

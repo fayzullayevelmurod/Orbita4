@@ -42,7 +42,7 @@
           <div class="intro-top__content">
             <div class="intro-header">
               <span class="intro-header__title">Мой профиль</span>
-              <button class="edit-btn">
+              <button class="edit-btn open-modal">
                 <span>Edite</span>
                 <img src="images/icons/edit.svg" alt="">
               </button>
@@ -193,8 +193,77 @@
 
   </div>
 
+  <!-- filter-modal -->
+  <div class="filter-modal modal">
+    <button class="modal-close close-modal"></button>
+    <div class="form-box">
+      <div class="box">
+        <label class="label">Введите сумму</label>
+        <input class="form-control" type="number" placeholder="100 000">
+      </div>
+      <div class="box">
+        <label class="label">Выбор</label>
+        <div class="flex-box">
+          <div class="select-boxes">
+            <div class="select-box">CRYPTO</div>
+            <div class="select-box active">STOCK</div>
+          </div>
+          <div class="select-boxes">
+            <div class="select-box active">NASDAQ</div>
+            <div class="select-box">MOEX</div>
+            <div class="select-box disabled">FOREX</div>
+          </div>
+          <input class="form-control" type="text" placeholder="TSLA">
+        </div>
+      </div>
+      <div class="box">
+        <label class="label">Торговля</label>
+        <div class="select-boxes">
+          <div class="select-box active">SPOT</div>
+          <div class="select-box">FUTURE</div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-header">
+          <label class="label">Риск</label>
+          <div class="line"></div>
+          <h3 class="sub-title">R</h3>
+        </div>
+        <div class="select-boxes">
+          <div class="select-box active">0.1%</div>
+          <div class="select-box">0.3%</div>
+          <div class="select-box">0.6%</div>
+          <div class="select-box">1%</div>
+          <div class="select-box">1.3%</div>
+          <div class="select-box">2%</div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-header">
+          <label class="label">Риск</label>
+          <div class="line"></div>
+          <h3 class="sub-title">R</h3>
+        </div>
+        <div class="select-boxes">
+          <div class="select-box active">0.3%</div>
+          <div class="select-box">1%</div>
+          <div class="select-box">2.1%</div>
+          <div class="select-box">1%</div>
+          <div class="select-box">1.3%</div>
+          <div class="select-box">2%</div>
+          <div class="select-box">6%</div>
+          <div class="select-box">0.6%</div>
+          <div class="select-box">1%</div>
+          <div class="select-box">1.3%</div>
+          <div class="select-box">2%</div>
+        </div>
+      </div>
+    </div>
+    <button class="save-btn close-modal green-btn">SAVE</button>
+  </div>
+
   <!-- custom script -->
-   <script src="./js/main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

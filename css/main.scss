@@ -71,6 +71,16 @@ body {
 .hide {
   display: none;
 }
+.green-btn {
+  background: #00c922;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20.25px;
+  color: #0f0f0f;
+  padding: 12px;
+  width: 100%;
+  border-radius: 4px;
+}
 
 // header
 .header {
@@ -338,5 +348,118 @@ main {
       background: #2b2b2b;
       border-radius: 2px;
     }
+  }
+}
+
+// modal
+.modal {
+  box-shadow: 0px -2px 4px 0px #fffafa59;
+  background: #202020;
+  padding: 8px 16px 32px 16px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  
+  z-index: 9999;
+  transform: translateY(110%);
+  transition: all 0.2s linear;
+  &.show {
+    transform: translateY(0);
+  }
+
+  &-close {
+    width: 70px;
+    height: 4px;
+    background: #b0b0b0;
+    border-radius: 100px;
+    display: block;
+    margin: 0 auto 24px auto;
+  }
+  .form-box {
+    .label {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16.2px;
+      color: #8a8a8a;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .form-control {
+      border: 1px solid #8a8a8a;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16.2px;
+      background: transparent;
+      padding: 10px 12px;
+      height: 36px;
+      width: 200px;
+      color: #ebebeb;
+
+      &::placeholder {
+        color: #8a8a8a;
+      }
+    }
+    .box {
+      padding: 8px 16px 16px 16px;
+      border-top: 1px solid #2b2b2b;
+      &:first-child {
+        border-top: none;
+      }
+      &-header {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 8px;
+        .label {
+          margin-bottom: 0;
+        }
+      }
+      .sub-title {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16.2px;
+        color: #ebebeb;
+      }
+      .line {
+        width: 1px;
+        height: 8px;
+        border-radius: 2px;
+        background: #8a8a8a;
+      }
+    }
+    .select-boxes {
+      display: flex;
+      gap: 16px;
+      margin-right: -16px;
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .select-box {
+      padding: 8px;
+      font-weight: 500;
+      color: #ebebeb;
+      border-radius: 6px;
+      border: 1px solid #8a8a8a;
+      white-space: nowrap;
+
+      &.active {
+        background: #e5e5e5;
+        color: #0f0f0f;
+      }
+      &.disabled {
+        color: #ebebeb4d;
+      }
+    }
+  }
+  .flex-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .save-btn {
   }
 }
