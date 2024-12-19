@@ -321,15 +321,6 @@ body {
 // chart sec
 main {
   padding-bottom: 50px;
-}
-
-// about-us
-.about-us {
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
   .header-box {
     border-bottom: 1px solid #2b2b2b;
     padding: 0 8px 4px 8px;
@@ -341,6 +332,17 @@ main {
       color: #8a8a8a;
     }
   }
+}
+
+// about-us
+.about-us {
+  margin-top: 12px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
   &__boxes {
     display: flex;
     align-items: stretch;
@@ -580,6 +582,154 @@ main {
   }
 }
 // about-us
+
+// statistic
+.statistic {
+  margin-top: 16px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .date-box {
+    text-align: center;
+    span {
+      font-weight: 500;
+      color: #8a8a8a;
+      margin-bottom: 8px;
+    }
+    .day {
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 70.2px;
+    }
+    .date {
+      padding: 0 12px;
+      background: #00c9224d;
+      border-radius: 8px;
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+  .stats-container {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .stat-card {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      border-radius: 8px;
+      border: 1px solid #2b2b2b;
+      padding: 8px;
+      .line {
+        width: 1px;
+        background: #2b2b2b;
+      }
+      & > div {
+        width: 100%;
+        text-align: center;
+      }
+      span {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 13.5px;
+        color: #8a8a8a;
+      }
+      h3 {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 29.7px;
+        letter-spacing: -0.02em;
+      }
+    }
+  }
+  .trade-statistics {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #2b2b2b;
+    .share-btn {
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 13.5px;
+      color: #8a8a8a;
+      padding: 4px 9px;
+      border-radius: 4px;
+      border: 1px solid #2b2b2b;
+      margin: 8px 0 0 auto;
+      display: block;
+    }
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      margin-top: 5px;
+      padding: 5px 16px 0 16px;
+    }
+    .list-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16.2px;
+        color: #8a8a8a;
+      }
+      h3 {
+        font-family: Satoshi;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16.2px;
+      }
+    }
+  }
+  .previous-transactions {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #2b2b2b;
+    margin-bottom: 27px;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding: 4px 16px 0 16px;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 26px;
+      h3 {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16.2px;
+        color: #ebebeb;
+      }
+      span {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16.2px;
+        color: #8a8a8a;
+        text-align: left;
+      }
+      .date {
+        min-width: 60px;
+        margin-left: auto;
+      }
+      .finance-name {
+        min-width: 44px;
+      }
+      .procent {
+        width: 42px;
+      }
+      .company-name {
+        min-width: 75px;
+      }
+    }
+  }
+}
+// statistic
+
 // footer
 .footer {
   position: fixed;
@@ -742,6 +892,10 @@ main {
     gap: 24px;
     button {
       width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
     }
   }
   .modal-desc {
