@@ -59,13 +59,15 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     modals.forEach(modal => {
-      const closeModalBtn = modal.querySelector(".close-modal");
+      const closeModalBtn = modal.querySelectorAll(".close-modal");
 
       if (closeModalBtn) {
-        closeModalBtn.addEventListener("click", (e) => {
-          e.stopPropagation();
-          modal.classList.remove("show");
-        });
+        closeModalBtn.forEach(btn => {
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            modal.classList.remove("show");
+          });
+        })
       }
 
       modal.addEventListener("click", (e) => e.stopPropagation());
