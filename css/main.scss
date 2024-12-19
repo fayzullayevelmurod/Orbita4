@@ -494,13 +494,14 @@ main {
       flex-direction: column;
       gap: 5px;
       border-bottom: 1px solid #2b2b2b;
+      padding: 8px 0;
     }
     &-box {
       display: flex;
       align-items: center;
       gap: 8px;
       justify-content: space-between;
-      padding: 9px 8px;
+      padding: 0 8px;
       .right-box {
         display: flex;
         align-items: center;
@@ -823,9 +824,11 @@ main {
   transition: all 0.2s linear;
   opacity: 0;
   border-radius: 10px 10px 0 0;
+  // display: none;
   &.show {
     opacity: 1;
     transform: translateY(0);
+    // display: block;
   }
 
   &-close {
@@ -906,12 +909,12 @@ main {
       border: 1px solid #8a8a8a;
       white-space: nowrap;
 
+      &.disabled {
+        color: #ebebeb4d;
+      }
       &.active {
         background: #e5e5e5;
         color: #0f0f0f;
-      }
-      &.disabled {
-        color: #ebebeb4d;
       }
     }
   }
@@ -1023,5 +1026,3 @@ main {
     }
   }
 }
-
-

@@ -485,13 +485,14 @@ main .header-box.active-header span {
   flex-direction: column;
   gap: 5px;
   border-bottom: 1px solid #2b2b2b;
+  padding: 8px 0;
 }
 .about-us .activity-box {
   display: flex;
   align-items: center;
   gap: 8px;
   justify-content: space-between;
-  padding: 9px 8px;
+  padding: 0 8px;
 }
 .about-us .activity-box .right-box {
   display: flex;
@@ -886,12 +887,12 @@ main .header-box.active-header span {
   border: 1px solid #8a8a8a;
   white-space: nowrap;
 }
+.modal .form-box .select-box.disabled {
+  color: rgba(235, 235, 235, 0.3019607843);
+}
 .modal .form-box .select-box.active {
   background: #e5e5e5;
   color: #0f0f0f;
-}
-.modal .form-box .select-box.disabled {
-  color: rgba(235, 235, 235, 0.3019607843);
 }
 .modal .flex-box {
   display: flex;
