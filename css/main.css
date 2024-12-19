@@ -287,6 +287,9 @@ body {
   padding-bottom: 8px;
   border-bottom: 1px solid #2b2b2b;
 }
+.chart-sec .position-history::-webkit-scrollbar {
+  display: none;
+}
 .chart-sec .position-history__box {
   display: flex;
   align-items: center;
@@ -333,6 +336,12 @@ main .header-box span {
   line-height: 13.5px;
   display: block;
   color: #8a8a8a;
+}
+main .header-box.active-header span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16.2px;
+  color: #ebebeb;
 }
 
 .about-us {
@@ -713,6 +722,34 @@ main .header-box span {
 }
 .statistic .previous-transactions__item .company-name {
   min-width: 75px;
+}
+
+.politica {
+  margin-top: 12px;
+}
+.politica .politica-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.politica .politica-info .header-box {
+  border-bottom: none;
+}
+.politica .politica-info .desc {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16.2px;
+  color: #8a8a8a;
+  padding: 4px 24px;
+  border-top: 1px solid #2b2b2b;
+  border-bottom: 1px solid #2b2b2b;
+}
+.politica .primary-btn {
+  margin: 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
 }
 
 .footer {
