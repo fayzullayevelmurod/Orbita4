@@ -3,6 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  width: 2px;
+  border-radius: 2px;
+  background: #2b2b2b;
+}
+::-webkit-scrollbar-thumb {
+  background: #2b2b2b;
+}
 ul,
 ol {
   margin: 0;
@@ -52,6 +60,16 @@ body {
     padding: 2px 7px;
     border-radius: 5px;
   }
+  &.danger {
+    color: #f20202;
+    background: #f202024d;
+  }
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
 }
 
 // header
@@ -189,7 +207,7 @@ body {
     overflow: hidden;
     background: url(../images/icons/frm.svg) no-repeat;
     background-size: cover;
-    img {
+    .chart-img {
       width: 100%;
       height: 100%;
     }
@@ -210,6 +228,9 @@ body {
       background: #00c922;
       width: 100%;
       padding: 8px 10px;
+    }
+    .stop-btn.stop {
+      background: #fd5b61;
     }
     .restart-btn {
       background: #7ecbf4;
@@ -237,5 +258,85 @@ body {
       }
     }
   }
+  .position-history {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 8px;
+    height: 170px;
+    overflow-y: scroll;
+    margin-bottom: 21px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #2b2b2b;
+    &__box {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      justify-content: space-between;
+    }
+    .status-text {
+      min-width: 48px;
+      min-height: 20px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__title,
+    &__text {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16.2px;
+      width: 175px;
+    }
+    &__text {
+      color: #8a8a8a;
+    }
+    .number {
+      padding: 2px 3px;
+      border-radius: 3px;
+      border: 1px solid #2b2b2b;
+      font-size: 12px;
+      font-weight: 500;
+      color: #8a8a8a;
+      line-height: 16.2px;
+    }
+  }
 }
 // chart sec
+main {
+  padding-bottom: 50px;
+}
+// footer
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #0f0f0f;
+  border-top: 1px solid #2b2b2b;
+  padding: 0 15px;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16.2px;
+      color: #8a8a8a;
+      padding: 14px 12px;
+      &.active {
+        color: #ebebeb;
+        border-top: 2px solid #ebebeb;
+      }
+    }
+    .line {
+      width: 1px;
+      height: 12px;
+      background: #2b2b2b;
+      border-radius: 2px;
+    }
+  }
+}

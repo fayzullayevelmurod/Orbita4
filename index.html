@@ -111,10 +111,10 @@
       <section class="chart-sec">
         <div class="container">
           <div class="chart-bg">
-            <img src="images/candles.svg" alt="">
+            <img class="chart-img" src="images/candles.svg" alt="">
           </div>
           <div class="chart-btns">
-            <button class="stop-btn">STOP</button>
+            <button class="stop-btn">START</button>
             <button class="restart-btn">RESTART</button>
             <button class="share-btn">
               <img src="images/icons/share.svg" alt="">
@@ -124,7 +124,43 @@
             <div class="trading-process__header">
               <span class="trading-process__header-title">Процесс торговли</span>
             </div>
-            
+            <div class="position-history">
+              <div class="position-history__box">
+                <div class="status-text"></div>
+                <h2 class="position-history__title">Закрыл позицию достигнув поставленой цели +2.6%</h2>
+                <div class="number">3336.007</div>
+              </div>
+              <div class="position-history__box">
+                <div class="status-text"></div>
+                <h2 class="position-history__text">Передвинул стоп</h2>
+                <div class="number">3336.007</div>
+              </div>
+              <div class="position-history__box">
+                <div class="status-text danger">SHORT</div>
+                <h2 class="position-history__title">Открыл в 14:24</h2>
+                <div class="number">3336.007</div>
+              </div>
+              <div class="position-history__box">
+                <div class="status-text"></div>
+                <h2 class="position-history__text">Закрыл позицию</h2>
+                <div class="number">3336.007</div>
+              </div>
+              <div class="position-history__box">
+                <div class="status-text"></div>
+                <h2 class="position-history__text">Передвинул стоп</h2>
+                <div class="number">3336.007</div>
+              </div>
+              <div class="position-history__box">
+                <div class="status-text"></div>
+                <h2 class="position-history__text">Удерживаю позицию</h2>
+                <div class="number">3336.007</div>
+              </div>
+              <div class="position-history__box">
+                <div class="status-text success">LONG </div>
+                <h2 class="position-history__title">Открыл в 11:21</h2>
+                <div class="number">3336.007</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -132,11 +168,33 @@
     </main>
 
     <!-- footer -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <ul>
+          <li>
+            <a class="active" href="#!">Торговля</a>
+          </li>
+          <div class="line"></div>
+          <li>
+            <a href="#!">Статистика</a>
+          </li>
+          <div class="line"></div>
+          <li>
+            <a href="#!">Данные</a>
+          </li>
+          <div class="line"></div>
+          <li>
+            <a href="#!">#ORBT</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <!-- footer -->
 
   </div>
 
+  <!-- custom script -->
+   <script src="./js/main.js"></script>
 </body>
 
 </html>
