@@ -486,7 +486,7 @@ main .header-box.active-header span {
   gap: 5px;
   border-bottom: 1px solid #2b2b2b;
   padding: 8px 0;
-  height: 70px;
+  height: 124px;
   overflow-y: auto;
 }
 .about-us .activity-boxes::-webkit-scrollbar {
@@ -549,7 +549,7 @@ main .header-box.active-header span {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  height: 100px;
+  height: 195px;
   overflow-y: auto;
 }
 .about-us .total-boxes::-webkit-scrollbar {
@@ -719,6 +719,11 @@ main .header-box.active-header span {
   flex-direction: column;
   gap: 2px;
   padding: 4px 16px 0 16px;
+  height: 150px;
+  overflow-y: auto;
+}
+.statistic .previous-transactions__list::-webkit-scrollbar {
+  display: none;
 }
 .statistic .previous-transactions__item {
   display: flex;
