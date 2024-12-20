@@ -486,6 +486,8 @@ main .header-box.active-header span {
   gap: 5px;
   border-bottom: 1px solid #2b2b2b;
   padding: 8px 0;
+  height: 60px;
+  overflow-y: auto;
 }
 .about-us .activity-box {
   display: flex;
@@ -536,11 +538,17 @@ main .header-box.active-header span {
 .about-us .invite-friend p {
   color: #8a8a8a;
 }
+.about-us .total {
+  padding-bottom: 75px;
+}
 .about-us .total-boxes {
   padding: 5px 8px;
   display: flex;
   flex-direction: column;
   gap: 2px;
+  background: #000;
+  height: 100px;
+  overflow-y: auto;
 }
 .about-us .total-box {
   border-bottom: 1px solid #2b2b2b;
@@ -581,6 +589,17 @@ main .header-box.active-header span {
 }
 .about-us .invite-btn {
   margin-bottom: 7px;
+  width: calc(100% - 32px);
+  margin-left: 16px;
+}
+.about-us .fixed-btn {
+  position: fixed;
+  bottom: 45px;
+  left: 0;
+  background: #0f0f0f;
+  width: 100%;
+  z-index: 100;
+  padding: 12px 0 7px 0;
 }
 
 .statistic {
@@ -737,6 +756,8 @@ main .header-box.active-header span {
   flex-direction: column;
   gap: 12px;
   padding-bottom: 75px;
+  height: calc(100vh - 190px);
+  overflow-y: auto;
 }
 .politica .politica-info .header-box {
   border-bottom: none;

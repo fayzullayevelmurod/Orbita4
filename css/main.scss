@@ -495,6 +495,8 @@ main {
       gap: 5px;
       border-bottom: 1px solid #2b2b2b;
       padding: 8px 0;
+      height: 60px;
+      overflow-y: auto;
     }
     &-box {
       display: flex;
@@ -547,11 +549,15 @@ main {
     }
   }
   .total {
+    padding-bottom: 75px;
     &-boxes {
       padding: 5px 8px;
       display: flex;
       flex-direction: column;
       gap: 2px;
+      background: #000;
+      height: 100px;
+      overflow-y: auto;
     }
     &-box {
       border-bottom: 1px solid #2b2b2b;
@@ -595,6 +601,17 @@ main {
   }
   .invite-btn {
     margin-bottom: 7px;
+    width: calc(100% - 32px);
+    margin-left: 16px;
+  }
+  .fixed-btn {
+    position: fixed;
+    bottom: 45px;
+    left: 0;
+    background: #0f0f0f;
+    width: 100%;
+    z-index: 100;
+    padding: 12px 0 7px 0;
   }
 }
 // about-us
@@ -754,6 +771,8 @@ main {
     flex-direction: column;
     gap: 12px;
     padding-bottom: 75px;
+    height: calc(100vh - 190px);
+    overflow-y: auto;
     .header-box {
       border-bottom: none;
     }
