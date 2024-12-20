@@ -32,7 +32,8 @@ window.addEventListener("DOMContentLoaded", () => {
       const selectBox = item.querySelectorAll(".select-box");
       selectBox.forEach(el => {
         el.addEventListener("click", () => {
-          el.classList.toggle("active")
+          selectBox.forEach(el => el.classList.remove("active"));
+          el.classList.toggle("active");
         })
       })
     })
