@@ -753,6 +753,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    padding-bottom: 75px;
     .header-box {
       border-bottom: none;
     }
@@ -767,11 +768,19 @@ main {
     }
   }
   .primary-btn {
-    margin: 16px 0;
     display: flex;
     align-items: center;
     gap: 8px;
     justify-content: center;
+    width: calc(100% - 32px);
+  }
+  .fixed-btn {
+    position: fixed;
+    bottom: 46px;
+    left: 16px;
+    background: #0f0f0f;
+    width: 100%;
+    padding: 16px 0;
   }
 }
 // politica
@@ -824,7 +833,7 @@ main {
   // transition: all 0.2s linear;
   // opacity: 0;
   transform: translateY(100%); /* Yashirin holat */
-  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out; /* Harakatni sekinlashtirish */
+  // transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out; /* Harakatni sekinlashtirish */
   // transition: all 0.2s ease-in-out;
   visibility: hidden; /* Dastlab yashirin */
   opacity: 0;

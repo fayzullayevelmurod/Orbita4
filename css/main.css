@@ -736,6 +736,7 @@ main .header-box.active-header span {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding-bottom: 75px;
 }
 .politica .politica-info .header-box {
   border-bottom: none;
@@ -750,11 +751,19 @@ main .header-box.active-header span {
   border-bottom: 1px solid #2b2b2b;
 }
 .politica .primary-btn {
-  margin: 16px 0;
   display: flex;
   align-items: center;
   gap: 8px;
   justify-content: center;
+  width: calc(100% - 32px);
+}
+.politica .fixed-btn {
+  position: fixed;
+  bottom: 46px;
+  left: 16px;
+  background: #0f0f0f;
+  width: 100%;
+  padding: 16px 0;
 }
 
 .footer {
@@ -800,7 +809,6 @@ main .header-box.active-header span {
   width: 100%;
   z-index: 9999;
   transform: translateY(100%); /* Yashirin holat */
-  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out; /* Harakatni sekinlashtirish */
   visibility: hidden; /* Dastlab yashirin */
   opacity: 0;
   border-radius: 10px 10px 0 0;
