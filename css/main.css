@@ -546,7 +546,6 @@ main .header-box.active-header span {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  background: #000;
   height: 100px;
   overflow-y: auto;
 }
